@@ -1,0 +1,369 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.top_side {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.top_side_countainer {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.top_block_logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.top_block_logo span {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* ========================== */
+
+.open_btn {
+    width: 133px;
+    height: 40px;
+    background: #1F30C9;
+    border-radius: 9px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.inp {
+    width: 718px;
+    height: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.block_img_bg {
+    display: flex;
+    gap: 20px;
+}
+
+.block_img_bg img {
+    cursor: pointer;
+}
+
+.block {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.block_left {
+    display: flex;
+    gap: 15px;
+}
+
+.block_left_img {
+    width: 68px;
+    height: 68px;
+    background: #C4C4C4;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.countainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+.block_left_about {
+    display: flex;
+    flex-direction: column;
+}
+
+.block_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block_right img {
+    cursor: pointer;
+}
+
+.span {
+    font-size: 16px;
+}
+
+.span1 {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.span2 {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+}
+
+/* modal */
+
+.modal_information {
+    width: 116px;
+    height: 59px;
+    background: rgba(255, 255, 255, 0.45);
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(16px);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+.modal_information {
+    flex-direction: column;
+    position: absolute;
+    left: 425px;
+    z-index: 10;
+    bottom: 46px;
+    display: none;
+}
+
+.modal_information div {
+    cursor: pointer;
+}
+
+
+/* modal_bg */
+
+.modal_bg {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 691px;
+    height: 691px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 28px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 57px;
+    padding: 30px;
+    position: fixed;
+    top: -150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: none;
+}
+
+.background_bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    backdrop-filter: blur(20px);
+    z-index: 9;
+    display: none;
+    cursor: pointer;
+}
+
+h1 {
+    margin-bottom: 28px;
+}
+
+.change_form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.change_form input {
+    width: 569px;
+    height: 55px;
+    background: #E7E5E5;
+    border-radius: 11px;
+    padding: 20px;
+}
+
+.change_btn {
+    width: 569px;
+    height: 84px;
+    background: #1F30C9;
+    border-radius: 11px;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+}
+
+/* modal_airlanes */
+
+.modal_airlanes_bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    backdrop-filter: blur(20px);
+    z-index: 9;
+    cursor: pointer;
+    display: none;
+}
+
+.modal_airlanes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 691px;
+    height: 691px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 28px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 57px;
+    padding: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    overflow: hidden;
+    display: none;
+}
+
+.modal_airlanes_logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    margin-bottom: 50px;
+}
+
+.modal_airlanes_logo h2 {
+    text-transform: uppercase;
+}
+
+.modal_airlanes_div_span {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal_airlanes_div_span span {
+    font-size: 23px;
+}
+
+.close_btn {
+    width: 569px;
+    height: 84px;
+    background: #1F30C9;
+    border-radius: 11px;
+    color: white;
+    font-size: 23px;
+    margin-top: 25px;
+    cursor: pointer;
+    position: relative;
+    left: 30px;
+}
+
+/* filter_img2 */
+
+.select_option {
+    width: 390px;
+    height: 72px;
+    position: absolute;
+    top: 0px;
+    left: 565px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    display: none;
+}
+
+select {
+    width: 138px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    background: #E7E7E7;
+    border-radius: 10px;
+}
+
+.select_option input {
+    width: 189px;
+    height: 44px;
+    background: #E7E7E7;
+    border-radius: 10px;
+    padding: 20px;
+    outline: none;
+}
+
+.modal_form_add_bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    backdrop-filter: blur(20px);
+    z-index: 9;
+    cursor: pointer;
+    display: none;
+}
+
+.modal_add_bg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+    width: 691px;
+    height: 691px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 28px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 57px;
+    padding: 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    overflow: hidden;
+    gap: 20px;
+    display: none;
+}
+
+.modal_add_bg input {
+    width: 569px;
+    height: 55px;
+    background: #E7E5E5;
+    border-radius: 11px;
+    padding: 20px;
+}
+
+.btn {
+    width: 569px;
+    height: 84px;
+    background: #1F30C9;
+    border-radius: 11px;
+    color: white;
+    font-size: 23px;
+    margin-top: 10px;
+    cursor: pointer;
+}

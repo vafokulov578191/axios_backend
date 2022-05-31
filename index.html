@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="wrapper" id="wrapper">
+        <div class="top_side">
+            <div class="top_side_countainer">
+                <div class="top_block_logo">
+                    <img src="./assets/img/image 2.svg" alt="">
+                    <span>Выши крыши</span>
+                </div>
+                <button class="open_btn">Добавить</button>
+                <div class="block_img_bg">
+                    <img class="filter_img1" src="./assets/img/filter 1.svg" alt="img">
+                </div>
+            </div>
+            <input class="inp" type="text" placeholder="Найти...." name="name">
+        </div>
+        <div class="countainer">
+            <!-- content -->
+        </div>
+       
+
+        <div class="background_bg"></div>
+        <div class="modal_bg">
+            <h1>Изменить</h1>
+            <form class="change_form" action="#" name="change_form">
+                <input type="text" placeholder="Название" name="name">
+                <input type="text" placeholder="Страна" name="country">
+                <input type="text" placeholder="Ссылка но фото" name="logo">
+                <input type="text" placeholder="Когда было создано (год)" name="established">
+                <input type="text" placeholder="Слоган" name="">
+                <input type="text" placeholder="Откуда - Куда" name="">
+                <input type="text" placeholder="Веб-сайт">
+                <button class="change_btn">Изменить</button>
+            </form>
+        </div>
+
+
+        <div class="modal_airlanes_bg"></div>
+        <div class="modal_airlanes">
+            <div class="modal_airlanes_logo">
+                <h2>O авиалинии</h2>
+            </div>
+            <div class="modal_airlanes_div_span">
+                <span class="modal_airlanes_text"></span>
+                <span class="modal_airlanes_text2"></span>
+                <span class="modal_airlanes_text3"></span>
+                <span class="modal_airlanes_text4"></span>
+                <span class="modal_airlanes_text5">Слоган :</span>
+                <span class="modal_airlanes_text6">Откуда -  Куда :</span>
+                <span class="modal_airlanes_text7">Веб-сайт :</span>
+                <button class="close_btn">Закрыть</button>
+            </div>
+        </div>
+
+
+        <div class="select_option">
+            <select></select>
+            <input class="inp_select" type="text" placeholder="Название страны" name="inp_select">
+        </div>
+
+
+        
+        <div class="modal_form_add_bg"></div>
+        <form class="form_add" action="" name="task">
+            <div class="modal_add_bg">
+                <input type="text" placeholder="Название" name="name">
+                <input type="text" placeholder="Страна" name="country">
+                <input type="text" placeholder="Ссылка но фото" name="logo">
+                <input type="text" placeholder="Слоган" name="">
+                <input type="text" placeholder="Когда было создано (год)" name="established">
+                <input type="text" placeholder="Откуда - Куда" name="">
+                <input type="text" placeholder="Веб-сайт">
+                <button class="btn">Создать</button>
+            </div>
+        </form>
+    </div>
+
+
+    <script type="module" src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
